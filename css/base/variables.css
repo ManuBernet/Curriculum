@@ -1,0 +1,29 @@
+:root {
+    /* Colores principales */
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+
+    /* Fondos */
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-surface-light: #334155;
+
+    /* Textos */
+    --color-text: #f8fafc;
+    --color-text-secondary: #94a3b8;
+
+    /* Extras */
+    --color-success: #22c55e;
+    --color-border: #334155;
+
+    /* Sombras */
+    --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.3);
+
+    /* Bordes */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    /* Anchura máxima */
+    --container-width: 1200px;
+}
