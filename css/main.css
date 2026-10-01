@@ -184,3 +184,18 @@ body {
 
     color: var(--color-text-secondary);
 }
+
+#about-page {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+}
+
+.section-container {
+    max-width: 1000px;
+
+    padding: 4rem;
+
+    margin: 0 auto;
+}
