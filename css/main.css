@@ -6,3 +6,37 @@ body {
     color: var(--color-text);
     font-family: 'Inter', sans-serif;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 3rem;
+
+    border-bottom: 1px solid var(--color-border);
+
+    background-color: var(--color-background);
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    color: var(--color-primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--color-text-secondary);
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+}
