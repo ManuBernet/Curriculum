@@ -1,11 +1,20 @@
 @import url("./base/reset.css");
 @import url("./base/variables.css");
 
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
 body {
+    min-height: 100vh;
     background-color: var(--color-background);
     color: var(--color-text);
-    font-family: 'Inter', sans-serif;
+    font-family: sans-serif;
 }
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
     display: flex;
@@ -33,10 +42,89 @@ body {
 
 .nav-links a {
     color: var(--color-text-secondary);
-
     transition: 0.3s ease;
 }
 
 .nav-links a:hover {
     color: var(--color-primary);
+}
+
+/* =========================
+   HERO
+========================= */
+
+#hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 6rem;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-subtitle {
+    color: var(--color-primary);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+    color: var(--color-text-secondary);
+
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-primary,
+.btn-secondary {
+    padding: 1rem 2rem;
+
+    border-radius: var(--radius-md);
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+    border: 1px solid var(--color-border);
+
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-surface);
 }
