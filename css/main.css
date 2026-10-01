@@ -158,3 +158,29 @@ body {
 .btn-secondary:hover {
     background-color: var(--color-surface);
 }
+
+.section-container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 6rem 4rem;
+}
+
+.section-container h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 2rem;
+
+    color: var(--color-primary);
+}
+
+.section-container p {
+    max-width: 800px;
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+
+    color: var(--color-text-secondary);
+}
