@@ -54,12 +54,36 @@ body {
 ========================= */
 
 #hero {
-    min-height: 90vh;
+    position: relative;
+
+    min-height: calc(100vh - 80px);
 
     display: flex;
     align-items: center;
 
-    padding: 0 6rem;
+    padding: 0 4rem;
+
+    overflow: hidden;
+}
+.hero-background {
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    background: radial-gradient(
+        circle,
+        rgba(59, 130, 246, 0.25) 0%,
+        rgba(59, 130, 246, 0.15) 30%,
+        transparent 70%
+    );
+
+    top: 50%;
+    right: 50px;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
 }
 
 .hero-content {
@@ -76,13 +100,18 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 5.5rem;
+    font-weight: 800;
+
+    line-height: 1.1;
 
     margin-bottom: 1rem;
 }
 
 .hero-description {
-    font-size: 1.2rem;
+    max-width: 650px;
+
+    font-size: 1.25rem;
     line-height: 1.8;
 
     color: var(--color-text-secondary);
@@ -108,6 +137,7 @@ body {
     font-weight: 600;
 
     transition: 0.3s;
+    transform: translateY(-3px);
 }
 
 .btn-primary {
